@@ -20,7 +20,6 @@ HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.ACCEPT, MediaType.ALL_VALUE );
         headers.add(HttpHeaders.CONTENT_TYPE, MediaType.ALL_VALUE );
         headers.set(HttpHeaders.USER_AGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64)");
-
         return restTemplate.getForObject(PROVIDER_URL+"producer-app/info",String.class);
     }
 
