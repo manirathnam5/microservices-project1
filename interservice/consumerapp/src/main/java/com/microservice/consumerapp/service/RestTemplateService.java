@@ -12,7 +12,6 @@ import org.springframework.web.client.RestTemplate;
 public class RestTemplateService {
 
     private  final RestTemplate restTemplate;
-
     private static final String PROVIDER_URL="http://localhost:8080/";
 
     public String getInstanceInfo(){
